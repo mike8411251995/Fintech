@@ -36,7 +36,7 @@ for ic in range(evalDays,0,-1):
         realAction[evalDays-ic] = 0
     else:
         assert False
-    if ic == 3 and Holding > 0:
+    if ic == 3 and Holding > 0: #遇到每個月的第三個禮拜三要平倉，請根據data的日期自行修改
         capital = Holding*clearPrice - transFee
         Holding = 0
 
